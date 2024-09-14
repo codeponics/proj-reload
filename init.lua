@@ -1,6 +1,6 @@
 local M = {}
 local logSettings = { -- defaults
-  logging = false,
+  logging = true,
   log_level = 'info',
   stop_at_cwd = true,
 }

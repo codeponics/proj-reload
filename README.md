@@ -48,6 +48,11 @@ require('proj-reload').setup()
 EOF
 ```
 
+Example keybinding in lua (can paste into config function or after lazy setup in init.lua):
+```lua
+vim.api.nvim_set_keymap('n', '<leader>r', '<Cmd>ReloadProjectFromAsmdef<CR>', { noremap = true, silent = true })
+```
+
 ## Plans
 * .asmdef tracking when new files are created and easily reload more than 1 .csproj file as needed rather than manually and slowly using the command on all files you wish to reload. This would be a toggleable option.
 * Add project file regeneration in some way when there is no existing Unity process

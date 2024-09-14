@@ -32,8 +32,10 @@ You can pass a modified version of this table to .setup() if you would like to e
 For lazy.nvim users, add a proj-reload.lua file in the directory of your stored remote plugins and insert the code:
 ```lua
 return {
-    'codeponics/proj-reload',
-    config = require('proj-reload').setup
+  'codeponics/proj-reload',
+  config = function()
+    require('proj-reload').setup()
+  end,
 }
 ```
 

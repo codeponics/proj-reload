@@ -2,7 +2,7 @@
 
 If you are looking to set up Unity with Neovim, I recommend downloading omnisharp-vim, ale, and asyncomplete or coc.nvim. Check :OmniSharpStatus as you are waiting for it to load OmniSharp in your file. When it is done loading, now this plugin can be of interest to you.
 
-This is a lightweight (64 lines) neovim lua plugin. With the lack of Unity neovim support, I aim to make development a little easier for omnisharp-vim Unity users with this plugin.
+This is a lightweight (69 lines) neovim lua plugin. With the lack of Unity neovim support, I aim to make development a little easier for omnisharp-vim Unity users with this plugin.
 
 ## Purpose
 

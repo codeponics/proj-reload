@@ -17,8 +17,6 @@ The command does not produce error messages, but simply logs messages in case yo
 Note: do not call the command without first ensuring your OmniSharp server is first loaded to prevent an error. (Use :OmniSharpStatus if you are not sure at any time)
 
 ## Installation
-Note: the init.lua file automatically calls setup() before returning itself, so you do not need to set config=true. This is only meant for fast setup but may or may not be changed in the future.
-
 Each code snippet uses default settings that looks like this:
 ```lua
 {
@@ -29,7 +27,7 @@ Each code snippet uses default settings that looks like this:
 ```
 You can pass a modified version of this table to .setup() if you would like to easily modify those settings.
 
-For lazy.nvim users, add a proj-reload.lua file in the directory of your stored remote plugins and insert the code:
+For lazy.nvim users, add a lua file in the directory of your stored remote plugins (custom/plugins for example) and insert the code:
 ```lua
 return {
   'codeponics/proj-reload',

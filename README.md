@@ -57,5 +57,7 @@ vim.api.nvim_set_keymap('n', '<leader>r', '<Cmd>ReloadProjectFromAsmdef<CR>', { 
 * .asmdef tracking when new files are created and easily reload more than 1 .csproj file as needed rather than manually and slowly using the command on all files you wish to reload. This would be a toggleable option.
 * Add project file regeneration in some way when there is no existing Unity process
 (Unfortunately as Unity only allows one instance, it is not possible to regenerate project files when Unity is opened. I will research how to overcome this but it may be hacky.)
+* Detect changes caused by Git or Perforce to refresh automatically based on diff
+* Extra command that refreshes all .csproj from all .asmdef found up to working directory (to refresh user-made .csproj and avoid refreshing Unity's .csproj redundantly for example)
 
-I have no other plans in order to keep this a lightweight plugin. Feel free to suggest if it benefits your use case.
+I have no intention to support omnisharp-roslyn soon but I may change my mind someday. I have no other plans in order to keep this a lightweight plugin. Feel free to suggest if it benefits your use case.

@@ -16,6 +16,23 @@ The command does not produce error messages, but simply logs messages in case yo
 
 Note: do not call the command without first ensuring your OmniSharp server is first loaded to prevent an error. (Use :OmniSharpStatus if you are not sure at any time)
 
+## When to refresh?
+
+This may look like common sense but it is just to give you an idea of the exact cases to refresh rather than when not to.
+
+| Case                                                      | Refresh (`✓`) / No Refresh (`✗`) |
+|------------------------------------------------------------|----------------------------------|
+| File content changes                                       | ✗                                |
+| File name changes                                          | ✓                                |
+| File moved but in the same `.asmdef`                       | ✗                                |
+| File moved and associated with a different `.asmdef`       | ✓                                |
+| File deleted                                               | ✓                                |
+| File added                                                 | ✓                                |
+| File extension changes                                     | ✓                                |
+| Folder structure changes                                   | ✓                                |
+| `.asmdef` file changes                                     | ✓                                |
+| Changes made by version control                            | ✓                                |
+
 ## Installation
 Each code snippet uses default settings that looks like this:
 ```lua

@@ -1,6 +1,6 @@
 # proj-reload
 
-**Note: well, looks like I just found out :OmniSharpReloadProject already does what this plugin does. Just use that instead for one-time .csproj reload. There are a few bugs still present even when doing :OmniSharpReloadProject which I aim to fix in th future with this plugin.**
+**Note: :OmniSharpReloadProject does nearly the same thing as this except there are some cases where :OmniSharpReloadProject fails to identify which directory to reload the project in.**
 
 If you are looking to set up Unity with Neovim, I recommend downloading omnisharp-vim, ale, and asyncomplete or coc.nvim. Check :OmniSharpStatus as you are waiting for it to load OmniSharp in your file. When it is done loading, now this plugin can be of interest to you.
 
